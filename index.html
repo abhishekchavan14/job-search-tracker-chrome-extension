@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep track of Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="myForm">
+        <div>
+            <input type="text" id="org-name" placeholder="Name of Organization">
+            <input type="url" id="job-url" placeholder="Job URL">
+        </div>
+        
+        <div>
+            <label for="start-dt">Start date:</label>
+            <input type="date" id="start-dt">
+            <input type="number" id="duration" placeholder="Duration(months)">
+        </div>
+        <div>
+            <input type="number" id="pay" placeholder="Pay per Month">
+            <input type="text" id="notes" placeholder="Notes">
+        </div>
+        <div>
+            <label for="applied">Applied?</label>
+            <input type="checkbox" id="applied">
+            <input type="button" id="submit-btn" value="Submit">
+        </div>
+
+    </form>
+
+    <table>
+        <tr>
+            <th id="name-head">Name of Org.</th>
+            <th id="url-head">Job URL</th>
+            <th id="date-head">Start Dt.</th>
+            <th id="dur-head">Duration</th>
+            <th id="pay-head">Pay per month</th>
+            <th id="notes-head">Notes</th>
+            <th id="applied-head">Applied?</th>
+        </tr>
+    </table>
+
+    <table id="myTable"></table>
+    <script src="script.js"></script>
+</body>
+
+</html>
